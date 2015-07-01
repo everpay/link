@@ -3,7 +3,7 @@
 //  Plaid Link UIWebView
 //
 //  Created by Paolo Bernasconi.
-//  Copyright (c) 2012 Plaid LLC. All rights reserved.
+//  Copyright (c) 2015 Plaid LLC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-	}
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
 }
