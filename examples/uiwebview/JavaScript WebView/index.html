@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<style type="text/css">body{font-family:"Avenir", serif;} a:link{color:gray;}</style>
+		<title>hello</title>
+	</head>
+	<body>
+		
+		<h3>Plaid Link - UIWebView</h3>
+        
+        
+        <button id="plaidLinkButton">Open Plaid Link</button>
+        
+        <script src="https://cdn.plaid.com/link/stable/link-initialize.js"></script>
+        <script>
+        var sandboxHandler = Plaid.create({
+          env: 'tartan',
+          clientName: 'Client Name',
+          key: 'test_key',
+          product: 'auth',
+          onSuccess: function(public_token) {
+            console.log(public_token);
+          },
+        });
+        
+        document.getElementById('plaidLinkButton').onclick = function() {
+          // Trigger the "Institution Select" view
+          sandboxHandler.open();
+        };
+        </script>
+	</body>
+</html>
+
